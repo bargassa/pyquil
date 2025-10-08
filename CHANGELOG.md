@@ -1,5 +1,17 @@
 # Changelog
 
+## 4.17.0 (2025-10-08)
+
+### Features
+
+#### restrict dependency versions (#1841)
+
+### Fixes
+
+#### update packages with detected vulnerabilities (#1834)
+
+#### clarify what printing a compiled program's output looks like for different targets (#1833)
+
 ## 4.17.0-rc.0 (2025-10-08)
 
 ### Features
