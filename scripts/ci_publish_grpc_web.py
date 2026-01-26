@@ -13,6 +13,7 @@ def write(f: TextIOWrapper, data):
     f.write(toml.dumps(data))
     f.truncate()
 
+
 with open(join(workspace_path, "pyproject.toml"), "r+") as f:
     data = toml.load(f)
 
