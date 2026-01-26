@@ -49,6 +49,7 @@ from pyquil.quilatom import (
 from .gates import CNOT, PHASE, QUANTUM_GATES, RX, RZ, H, X
 from .quil import Program
 
+
 PauliTargetDesignator = QubitDesignator
 PauliDesignator = Union["PauliTerm", "PauliSum"]
 
