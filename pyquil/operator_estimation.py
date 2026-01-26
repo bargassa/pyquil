@@ -10,6 +10,7 @@ import numpy as np
 
 from pyquil.api import QuantumComputer
 
+
 # import the full public API of the pyquil experiment module
 from pyquil.experiment._group import (
     _max_weight_operator,
