@@ -31,6 +31,7 @@ class FlatWaveform(TemplateWaveform):
 
     iq = _template_waveform_property("iq", doc="A raw IQ value.")
     scale = _template_waveform_property("scale", doc="An optional global scaling factor.", dtype=float)
+    wave = _template_waveform_property("wave", doc="An optional wavelength factor.", dtype=float)
     phase = _template_waveform_property("phase", doc="An optional phase shift factor.", dtype=float)
     detuning = _template_waveform_property("detuning", doc="An optional frequency detuning factor.", dtype=float)
 
