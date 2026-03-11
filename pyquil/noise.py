@@ -35,7 +35,7 @@ if TYPE_CHECKING:
 INFINITY = float("inf")
 "Used for infinite coherence times."
 
-_KrausModel = namedtuple("_KrausModel", ["gate", "params", "targets", "kraus_ops", "fidelity"])
+_KrausModel = namedtuple("_KrausModel", ["gate", "params", "targets", "kraus_ops", "fidelity", "entanglement", "expressibility"])
 
 
 class KrausModel(_KrausModel):
