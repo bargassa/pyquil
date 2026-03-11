@@ -67,6 +67,11 @@ def _one_q_sic_prep(index: int, qubit: QubitDesignator) -> Program:
         return zx_plane_rotation + RZ(2 * pi / 3, qubit)
 
     raise ValueError(f"Bad SIC index: {index}")
+    
+    elif index == 4:
+        return zx_plane_rotation + RZ(2 * pi / 4, qubit)
+
+    raise ValueError(f"Bad SIC index: {index}")
 
 
 def _one_q_pauli_prep(label: str, index: int, qubit: QubitDesignator) -> Program:
