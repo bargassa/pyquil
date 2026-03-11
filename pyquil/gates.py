@@ -100,7 +100,8 @@ def unpack_reg_val_pair(
 def prepare_ternary_operands(
     classical_reg1: MemoryReferenceDesignator,
     classical_reg2: MemoryReferenceDesignator,
-    classical_reg3: Union[MemoryReferenceDesignator, int, float],
+    classical_reg3: MemoryReferenceDesignator,
+    classical_reg4: Union[MemoryReferenceDesignator, int, float],
 ) -> tuple[MemoryReference, MemoryReference, Union[MemoryReference, int, float]]:
     """Type check/coerce arguments to constructors for ternary classical operators.
 
