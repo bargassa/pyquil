@@ -411,27 +411,27 @@ def format_parameter(element: ParameterDesignator) -> str:
         element = complex(element.real, element.imag)
         out = ""
         r = element.real
-        i = element.imag
-        if i == 0:
+        m = element.imag
+        if m == 0:
             return repr(r)
 
         if r != 0:
             out += repr(r)
 
-        if i == 1:
+        if m == 1:
             if not np.isclose(r, 0, atol=1e-14):
                 raise ValueError(f"Invalid complex number: {element}")
             out = "i"
-        elif i == -1:
+        elif m == -1:
             if not np.isclose(r, 0, atol=1e-14):
                 raise ValueError(f"Invalid complex number: {element}")
             out = "-i"
-        elif i < 0:
-            out += repr(i) + "i"
+        elif m < 0:
+            out += repr(m) + "i"
         elif r != 0:
-            out += "+" + repr(i) + "i"
+            out += "+" + repr(m) + "i"
         else:
-            out += repr(i) + "i"
+            out += repr(m) + "i"
 
         return out
     elif isinstance(element, MemoryReference):
